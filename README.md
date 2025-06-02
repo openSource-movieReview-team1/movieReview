@@ -41,7 +41,7 @@ git flow feature finish <기능명>
 git push origin develop
 ```
 
-### 3. feature에서 작업을 마친 뒤 develop브랜치로 병합 
+### 3. feature에서 작업을 마친 뒤 develop브랜치로 PR 
 
 
 
