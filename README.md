@@ -41,11 +41,26 @@ git flow feature finish <기능명>
 git push origin develop
 ```
 
-### 3. feature에서 작업을 마친 뒤 develop브랜치로 PR 
 
+### 3.1 코드 리뷰가 필요할 때마다 feature 브랜치를 push 후 PR
 
+```
+git push origin feature/<기능명>
 
+```
 
+### 4. 모든 기능 개발 완료 시 
+```
+git checkout feature/<기능명>
+git fetch origin
+git merge origin/develop
+# 또는
+git rebase origin/develop
+```
+ 후에 아래 명령어 입력
 
+```
+git flow feature finish <기능명>
+git push origin develop
 
-
+```
